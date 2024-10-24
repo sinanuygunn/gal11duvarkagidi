@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Sen:regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  height: 100vh;
+  background-color: black;
+}
+
+#wallpaper {
+  position: absolute;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background: url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN);
+  left: 0;
+  width: 101%;
+  margin-top: -1px;
+  margin-left: -1px;
+  height: 101%;
+  object-fit: cover;
+}
+
+.container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.295);
+  width: 400px;
+  /*background filter*/
+  backdrop-filter: blur(20px);
+  border-radius: 50px;
+  height: 200px;
+  font-size: 2em;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 4em;
+}
+
+.clock {
+  padding: 50px;
+  overflow:visible;
+}
+
+.clock > .time {
+  overflow: visible ;
+  display: grid;
+  place-items: center;
+}
+
+.clock > .time > .timechild {
+  width: 100%;
+  overflow: visible ;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
+#hours {
+  margin-top: 7px;
+}
+
+#minutes {
+  margin-top: 7px;
+}
+
+#seconds {
+  margin-top: 7px;
+}
+
+.time {
+  margin-top: 30px;
+}
+
+.dayText {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: -10px;
+  z-index: 9999999;
+  margin-top: 4px;
+}
+
+.classText {
+  position: absolute;
+  font-size: 17px;
+  margin-left: -10px;
+  bottom: 0;
+  z-index: 9999999;
+  margin-bottom: 27px;
+}
+
+.dateText {
+  position: absolute;
+  font-size: 15px;
+  z-index: 9999999;
+  margin-left: -10px;
+  margin-top: -14px;
+}
