@@ -66,11 +66,11 @@ setInterval(() => {
 
         if (currentTimeInMinutes < dersBaslama) {
             let fark = timeDifference(currentTimeInMinutes, dersBaslama);
-            kalanSure = `(${i + 1}. Ders) ${kalanText[1]} ${formatTime(fark)}`;
+            kalanSure = `(${i + 1}. Ders) ${kalanText[1]} ${fark} dakika.`;
             break;
         } else if (currentTimeInMinutes < dersBitis) {
             let fark = timeDifference(currentTimeInMinutes, dersBitis);
-            kalanSure = `(${i + 1}. Ders) ${kalanText[0]} ${formatTime(fark)}`;
+            kalanSure = `(${i + 1}. Ders) ${kalanText[0]} ${fark} dakika.`;
             break;
         } else if (currentTimeInMinutes < (dersBitis + tenefus) && i < dersSaatleri.length - 1) {
             let fark = timeDifference(currentTimeInMinutes, dersBitis + tenefus);
